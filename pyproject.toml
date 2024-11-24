@@ -1,17 +1,7 @@
-[tool.poetry]
+[project]
 name = "advent-of-code"
 version = "0.1.0"
-description = ""
-authors = ["Julien Perichon <julienperichon023@gmail.com>"]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-typer = "^0.7.0"
-mypy = "^1.11.2"
-pyright = "^1.1.378"
-
-[tool.poetry.dev-dependencies]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+description = "My solutions for Advent of code"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
