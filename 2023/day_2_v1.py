@@ -1,8 +1,12 @@
+from utils import get_input_data_lines
+
+
 LIMITS = {"red": 12, "green": 13, "blue": 14}
+
 
 def parse_row(row: str) -> dict:
     game_id_str, draws_str = row.rstrip("\n").split(": ")
-    game_id = int(game_id_str[len("Game "):])
+    game_id = int(game_id_str[len("Game ") :])
 
     draws = []
     for draw in draws_str.split("; "):
@@ -12,10 +16,8 @@ def parse_row(row: str) -> dict:
             draw_cubes_info[color] = int(number)
         draws.append(draw_cubes_info)
 
-    return {
-        "game_id": game_id,
-        "draws": draws
-    }
+    return {"game_id": game_id, "draws": draws}
+
 
 def check_row_feasibility(game_dict: dict) -> tuple[int, bool]:
     is_game_feasible = True
@@ -28,8 +30,8 @@ def check_row_feasibility(game_dict: dict) -> tuple[int, bool]:
 
     return game_dict["game_id"], is_game_feasible
 
-with open("input.txt", "r") as input_file:
-    games = input_file.readlines()
+
+games = get_input_data_lines("2023_day_2.txt")
 
 total = 0
 for game in games:

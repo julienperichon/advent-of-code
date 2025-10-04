@@ -1,3 +1,6 @@
+from utils import get_input_data
+
+
 test_input = """32T3K 765
 T55J5 684
 KK677 28
@@ -49,8 +52,8 @@ def process_input(input_txt: str) -> list[Hand]:
     return processed_input
 
 
-with open("input.txt", "r") as input_file:
-    input_data = input_file.read()
+input_data = get_input_data("2023_day_7.txt")
+
 processed_input = process_input(input_data)
 sorted_hands = sorted(processed_input, key=lambda h: h.hand_value)
 total_bid_won = 0

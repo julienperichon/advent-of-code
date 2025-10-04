@@ -1,7 +1,8 @@
 from typing import Sequence
 
-with open("input.txt", "r") as input_file:
-    input = input_file.readlines()
+from utils import get_input_data_lines
+
+input = get_input_data_lines("2023_day_4.txt")
 
 
 def count_card_winning_numbers(row: str) -> int:
