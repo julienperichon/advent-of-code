@@ -69,8 +69,18 @@ def compute_row_valid_arrangements(
 # input_data = test_input
 input_data = get_input_data("2023_day_12.txt")
 spring_data, arrangement_data = process_input(input_data)
+
 total_score = 0
 for row, arrangement in zip(spring_data, arrangement_data):
     total_score += compute_row_valid_arrangements(row, arrangement)
 
-print(total_score)
+print("Part 1 score:", total_score)
+
+
+total_score = 0
+for row, arrangement in zip(spring_data, arrangement_data):
+    unfolded_row = "?".join([row] * 5)
+    unfolded_arrangement = arrangement * 5
+    total_score += compute_row_valid_arrangements(unfolded_row, unfolded_arrangement)
+
+print("Part 2 score:", total_score)
