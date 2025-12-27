@@ -3,7 +3,7 @@ from math import prod
 from itertools import product
 from typing import Optional
 
-from utils import get_input_data_lines
+from file_utils import get_input_data_lines
 
 
 def find_matches_in_row(row: str, pattern: str) -> list[re.Match]:

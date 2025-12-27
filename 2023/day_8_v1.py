@@ -7,7 +7,7 @@
 # EEE = (EEE, EEE)
 # GGG = (GGG, GGG)
 # ZZZ = (ZZZ, ZZZ)"""
-from utils import get_input_data
+from file_utils import get_input_data
 
 test_input = """LLR
 

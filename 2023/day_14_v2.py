@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from utils import get_input_data
+from file_utils import get_input_data
 
 
 test_input = """O....#....

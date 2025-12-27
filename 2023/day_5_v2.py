@@ -5,7 +5,7 @@ Currently garbage, does not work and computes slowly
 
 import time
 
-from utils import get_input_data
+from file_utils import get_input_data
 
 
 def compute_seed_mapping(input: str) -> list[tuple[int]]:

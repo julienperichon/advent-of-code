@@ -1,4 +1,4 @@
-from utils import get_input_data_lines
+from file_utils import get_input_data_lines
 
 
 input = get_input_data_lines("2023_day_4.txt")

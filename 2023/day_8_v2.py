@@ -1,7 +1,7 @@
 # TODO: Does not work yet, but apparently do some LCM
 import time
 
-from utils import get_input_data
+from file_utils import get_input_data
 from statistics import mean, stdev
 
 test_input = """LR

@@ -1,5 +1,5 @@
 from enum import Enum, auto
-from utils import get_input_data
+from file_utils import get_input_data
 
 
 test_input = """-L|F7

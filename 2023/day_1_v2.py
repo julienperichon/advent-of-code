@@ -1,6 +1,6 @@
 import re
 
-from utils import get_input_data_lines
+from file_utils import get_input_data_lines
 
 number_correspondance = {
     "one": "1",

@@ -1,4 +1,4 @@
-from utils import get_input_data
+from file_utils import get_input_data
 
 test_data = """0 3 6 9 12 15
 1 3 6 10 15 21
