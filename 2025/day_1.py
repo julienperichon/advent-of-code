@@ -1,5 +1,5 @@
+from aoc_framework import Solver, Runner
 from typing import override
-from solver_framework import Runner, Solver
 
 test_input = """L68
 L30

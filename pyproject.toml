@@ -5,6 +5,10 @@ description = "My solutions for Advent of code"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "aoc-framework",
     "ruff>=0.8.0",
     "typer>=0.21.0",
 ]
+
+[tool.uv.sources]
+aoc-framework = { git = "ssh://git@github.com/julienperichon/advent-of-code-framework", tag = "v0.2.0" }

@@ -1,5 +1,4 @@
-from typing import override
-from solver_framework import Runner, Solver
+from aoc_framework import Solver, Runner
 
 test_input = """987654321111111
 811111111111119
@@ -10,7 +9,6 @@ test_input = """987654321111111
 class Part1Solver(Solver):
     batteries_to_power_count: int = 2
 
-    @override
     def solve(self, processed_input: list[str]) -> int:
         total_joltage = 0
         for bank_input in processed_input:
